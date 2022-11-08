@@ -21,15 +21,15 @@ cities.forEach(city => {
         fetchWeatherData();
         app.getElementsByClassName.opacity = "0";
         form.addEventListener('submit',(e)=>{
-            if(search.ariaValueMax.length == 0){
-                alert(`Please type in a city name`)
-            }
-            else{
+            // if(search.ariaValueMax.length == 0){
+            //     alert(`Please type in a city name`)
+            // }
+            // else{
                 cityInput = search.ariaValueMax;
                 fetchWeatherData();
                 search.value = "";
                 app.getElementsByClassName.opacity = "0";
-            }
+            // }
             //e.preventDefault();
         });
         function dayOfTheWeek(day, month, year){
